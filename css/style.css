@@ -198,3 +198,47 @@ li{
     padding: 20px;
     box-shadow: 7px 7px 10px 0 rgb(76 110 245 / 10%);
 }
+
+#testimonials{
+    background-image: url('../img/bg.jpg');
+    text-align: center;
+    background-size: cover;
+}
+
+#testimonials h1{
+ color: white;
+ font-size: 50px;
+ display: inline-block;
+ margin-top: 60px;
+}
+
+#testimonials .list_testimonials{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px 200px;
+}
+
+#testimonials .list_testimonials .testimonial{
+   padding: 0px 10px;
+}
+
+#testimonials .list_testimonials img{
+    margin: 20px;
+    border-radius: 50%;
+ }
+
+ #testimonials .list_testimonials p{
+    color: white;
+    margin: auto;
+   }
+
+#testimonials .list_testimonials h3{
+color: #ff9900;
+text-align: right;
+}
+
+#map{
+   height: 70vh;  
+   margin: 150px 0px;
+}
