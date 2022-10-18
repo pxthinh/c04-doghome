@@ -234,11 +234,31 @@ li{
    }
 
 #testimonials .list_testimonials h3{
-color: #ff9900;
-text-align: right;
+    color: #ff9900;
+    text-align: right;
 }
 
 #map{
    height: 70vh;  
    margin: 150px 0px;
 }
+
+#footer{
+    background-color: #17181b;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#footer div{
+   width: 300px;
+   padding: 30px;
+}
+
+#footer div>p{
+    color: #999;
+ }
+
+
+
