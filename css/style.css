@@ -260,5 +260,210 @@ li{
     color: #999;
  }
 
+ .connect{
+     margin:0px ;
+ }
 
+ .input{
+     padding: 0px !important;
+     margin: 5px;
+     position: relative;
+ }
+
+.input input{
+    width: 60%;
+    height: 40px;
+    border: 0px;
+    padding: 0px;
+    padding-left: 10px;
+}
+.input button{
+    position: absolute;
+    left: 60%;
+    border: 0px;
+    padding: 0px;
+    width: 38%;
+    height: 40px;
+    background-color: #ff9900;
+}
+
+
+ .sns{
+     padding: 0px !important;
+     margin: 10px;
+ }
+ .sns a>i{
+     margin: 5px;
+     font-size: 30px;
+ }
+
+ #form{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+ #form .content{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 400px;
+ }
+
+ #form h1{
+   text-align: center;
+   font-size: 50px;
+ }
+
+ .contact_info{
+     grid-area: 1/1/2/2;
+ }
+
+ .contact_info h3{
+     font-size: 28px;
+     color: #ff9900;
+     margin-bottom: 7px;
+ }
+
+ .visit{
+     display: flex ;
+ }
+ .visit i{
+     font-size: 28px;
+    padding: 22px 30px;
+}
+
+ .mail{
+    display: flex ;
+ }
+
+ .mail i{
+    font-size: 28px;
+    padding: 22px 30px;
+ }
+
+ .call{
+    display: flex ;
+ }
+
+ .call i{
+    font-size: 28px;
+    padding: 22px 30px;
+ }
+
+ .visit div>h4{
+    font-size: 17px;
+   margin-bottom: 8px;
+}
+
+.mail div>h4{
+    font-size: 17px;
+   margin-bottom: 8px;
+}
+.call div>h4{
+    font-size: 17px;
+  margin-top: 8px;
+}
+
+ .visit div>p{
+     font-size: 15px;
+    color: #999;
+    margin-top: 8px;
+ }
+
+ .mail div>p{
+    font-size: 15px;
+    color: #999;
+    margin-top: 8px;
+ }
+ .call div>p{
+    font-size: 15px;
+   color: #999;
+   margin-top: 8px;
+ }
+
+ .form_input{
+    grid-area: 1/2/2/3;
+    padding: 40px;
+    box-shadow: 7px 7px 10px 0 rgb(56 56 56 / 21%);
+    text-align: center;
+}
+
+.name,.email,.message,.btn{
+    width: 100%;
+    margin: 10px;
+}
+
+.name,.email{
+    padding: 10px;
+    height: 40px;
+    margin: 10px;
+}
+
+.message{
+    padding: 10px;
+    height: 150px;
+}
+
+.btn{
+    height: 40px;
+    background-color: #ff9900;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#our_blog{
+    width: 90%;
+    margin: auto;
+}
+#our_blog h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.content_our_log{
+    display: flex;
+}
+.item1 img{
+    width: 100%;
+}
+.item2 img{
+    width: 100%;
+}
+
+.item1,.item2,.item3{
+    box-shadow: 7px 7px 7px 7px rgb(76 110 245 / 10%);
+    padding: 0px;
+    margin: 10px;
+    border: solid 1px rgb(197, 149, 149);
+}
+
+.item3{
+    padding: 10px;
+}
+
+.btn1{
+    color: #ff9900;
+}
+
+.des{
+    color: #999;
+}
+
+.date{
+    color: rgb(245, 180, 1);
+}
+
+.item1 span{
+    display: block;
+    padding: 10px;
+}
+.item2 span{
+    display: block;
+    padding: 10px;
+}
+
+.item3 span{
+    display: block;
+    padding: 10px;
+}
 
