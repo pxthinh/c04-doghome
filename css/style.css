@@ -132,6 +132,7 @@ li{
 }
 
 .dogitem img{
+    transition: transform 1s;
     width: 80%;
     border-radius: 50%;
 }
@@ -145,6 +146,12 @@ li{
    text-align: center;
    color: white;
    background-size: cover;
+   background-position: 0px 0px;
+}
+
+#statistics:hover{
+    background-repeat: repeat-x;
+   animation: backgroundimg 10s linear infinite ;
 }
 #statistics h2{
     display: inline-block;
@@ -166,37 +173,45 @@ li{
 #services{
     padding: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    gap: 10px;
+    grid-template-columns: 1fr 320px 320px;
+    grid-template-rows: 270px 270px;
+    gap: 20px;
 }
 
 
 .box{
     grid-column: 1/2;
     grid-row: 1/3;
-    line-height: 50px;
+    line-height: 35px;
+    margin-right: 150px;
+
 }
 
 .box h1{
     font-size: 40px;
 }
 
-#services div{
+#services .box{
     text-align: left;
 }
 
 #services h3{
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
 }
 #services p{
     color: #999;
 }
+
+
 #services .service{
     text-align: center;
     padding: 20px;
     box-shadow: 7px 7px 10px 0 rgb(76 110 245 / 10%);
+}
+
+.service .item{
+    display: block;
 }
 
 #testimonials{
@@ -412,7 +427,7 @@ li{
 }
 
 #our_blog{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 #our_blog h1{
@@ -431,10 +446,10 @@ li{
 }
 
 .item1,.item2,.item3{
-    box-shadow: 7px 7px 7px 7px rgb(76 110 245 / 10%);
+    box-shadow: 0px 3px 10px 1px rgb(45 45 45 / 8%);
     padding: 0px;
-    margin: 10px;
-    border: solid 1px rgb(197, 149, 149);
+    margin: 14px;
+    border: solid 1px rgb(219, 219, 219);;
 }
 
 .item3{
@@ -467,3 +482,62 @@ li{
     padding: 10px;
 }
 
+div.service:hover{
+    position: relative;
+    background-color: #ff9900;
+}
+
+div.service:hover div.item{
+    position: relative;
+    animation-name: service;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes service {
+    0%   {
+        transform: translateY(-1000px) ;
+        opacity: 0;
+        scale: 0.3;
+    }
+    100%  {
+        transform: translateY(0px) ;
+        opacity: 1;
+        scale: 1;
+    }
+  }
+    .content_our_log div:hover{
+        animation: blog 1s ease;
+    }
+  @keyframes blog {
+    0%   {
+        transform: translateY(30px) ;
+    }
+    25%  {
+        transform: translateY(0px) ;
+    }
+    50%  {
+        transform: translateY(20px) ;
+    }
+    75%  {
+        transform: translateY(0px) ;
+    }
+    100%  {
+        transform: translateY(10px) ;
+    }
+  }
+
+
+  @keyframes backgroundimg {
+    0%   {
+        background-position: 0 0;
+    }
+    100%  {
+        background-position: 0 100%;
+    }
+  }
+
+  .dogitem img:hover{
+    transform: rotateY(180deg);
+  }
